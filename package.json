@@ -1,0 +1,39 @@
+{
+  "name": "hubot-kodibot",
+  "description": "Control Kodi media player with Hubot",
+  "version": "0.0.0",
+  "author": "Patrick Rodriguez <patr84@gmail.com>",
+  "license": "MIT",
+
+  "keywords": ["hubot","hubot-scripts","kodi"],
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-kodibot.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-kodibot/issues"
+  },
+
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+
+  "main": "index.coffee",
+
+  "scripts": {
+    "test": "grunt test"
+  }
+}
