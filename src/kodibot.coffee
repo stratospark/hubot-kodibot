@@ -19,10 +19,10 @@
 # Author:
 #   stratospark
 
-KODI_HOST = process.env.KODI_HOST or 'http://cashewcheese.local'
-KODI_PORT = process.env.KODI_PORT or 8080
-KODI_USERNAME = process.env.KODI_USERNAME or 'kodi'
-KODI_PASSWORD = process.env.KODI_PASSWORD or 'kodi'
+KODI_HOST = process.env.KODI_HOST
+KODI_PORT = process.env.KODI_PORT
+KODI_USERNAME = process.env.KODI_USERNAME
+KODI_PASSWORD = process.env.KODI_PASSWORD
 ENDPOINT = "#{KODI_HOST}:#{KODI_PORT}/jsonrpc"
 
 
@@ -42,7 +42,7 @@ module.exports = (robot) ->
 
   robot.respond /kodi debug/i, (msg) ->
     msg.send "KODI_HOST: #{KODI_HOST}, KODI_PORT: #{KODI_PORT}, KODI_USERNAME: #{KODI_USERNAME}, KODI_PASSWORD: #{KODI_PASSWORD}"
-    
+
   robot.respond /kodi play (.*)/i, (msg) ->
     url = msg.match[1]
     videoid = 0
